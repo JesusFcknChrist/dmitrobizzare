@@ -2,10 +2,7 @@
     font-family: AnimeAceUkr;
     src: url(Anime_Ace_v05_Regular.woff2);
 }
+
 body {
     background-color: aliceblue;
-}
-
-header {
-    font-family: AnimeAceUkr; font-size: 60px;
 }
