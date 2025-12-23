@@ -18,6 +18,22 @@ header {
 .sideimg {
     height: 150px; margin-left: 50px; margin-right: 50px;
 }
+nav ul {
+    list-style: none;
+    font-family: AnimeAceUkr;
+    font-size: 20px;
+    margin: 0;
+
+}
+ul li a {
+display: block; text-decoration: none; float: left; padding: 16px 16px; color: black;
+}
+ul {
+    overflow: hidden; background-color: rgb(141, 171, 197);
+}
+ul li a:hover {
+    background-color: rgb(189, 217, 240);
+}
 @media (max-width: 768px) {
   .head {
     font-size: 8px;
@@ -27,6 +43,9 @@ header {
   .sideimg {
     height: 40px;
     margin: 0 10px;
+  }
+  nav ul a {
+    font-size: 10px; padding: 10px 10px;
   }
 }
 
@@ -39,5 +58,8 @@ header {
   .sideimg {
     height: 40px;
     margin: 0 10px;
+  }
+  nav ul a {
+    font-size: 8px; padding: 10px 10px;
   }
 }
