@@ -18,3 +18,26 @@ header {
 .sideimg {
     height: 150px; margin-left: 50px; margin-right: 50px;
 }
+@media (max-width: 768px) {
+  .head {
+    font-size: 18px;
+    padding: 12px;
+  }
+
+  .sideimg {
+    height: 90px;
+    margin: 0 15px;
+  }
+}
+
+/* 📱 Very small phones */
+@media (max-width: 480px) {
+  .head {
+    font-size: 15px;
+  }
+
+  .sideimg {
+    height: 70px;
+    margin: 0 10px;
+  }
+}
