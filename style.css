@@ -20,24 +20,24 @@ header {
 }
 @media (max-width: 768px) {
   .head {
-    font-size: 18px;
-    padding: 12px;
+    font-size: 8px;
+    padding: 10px;
   }
 
   .sideimg {
-    height: 90px;
-    margin: 0 15px;
+    height: 40px;
+    margin: 0 10px;
   }
 }
 
 /* 📱 Very small phones */
 @media (max-width: 480px) {
   .head {
-    font-size: 15px;
+    font-size: 6px;
   }
 
   .sideimg {
-    height: 70px;
+    height: 40px;
     margin: 0 10px;
   }
 }
