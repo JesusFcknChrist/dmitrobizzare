@@ -85,6 +85,15 @@ td {
   display: block;
 }
 
+footer {
+  font-family: AnimeAceUkr;
+  font-size: 12px;
+  background-color: #a5a5a5;
+  padding: 10px;
+  text-align: center;
+  margin-top: 200px;
+}
+
 /* Mobile scaling */
 @media (max-width: 768px) {
   .head {
