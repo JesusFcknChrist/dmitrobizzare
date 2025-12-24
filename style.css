@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 @font-face {
     font-family: AnimeAceUkr;
     src: url(Anime_Ace_v05_Regular.woff2);
@@ -29,7 +35,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0; /* spacing can be added if needed */
+  margin: 0;
 }
 
 nav ul li a {
@@ -39,8 +45,44 @@ nav ul li a {
   color: black;
 }
 
-nav ul li a:hover {
+nav ul li a:hover, a:active {
   background-color: rgb(189, 217, 240);
+}
+section {
+  background-color: rgb(163, 197, 218);
+  width: 70%;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 24px;
+  border-radius: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  font-family: AnimeAceUkr;
+  padding: 20px;
+  text-align: center;
+}
+
+.tbhead {
+  font-size: 22px;
+  padding: 40px;
+  border-bottom: 6px solid aliceblue;
+}
+
+.synopsis {
+  padding: 0 48px;
+  line-height: 1.6;
+}
+
+.poster {
+  width: 280px;
+  margin: 0 auto;
+  display: block;
 }
 
 /* Mobile scaling */
@@ -58,6 +100,36 @@ nav ul li a:hover {
   nav ul li a {
     font-size: 14px;
     padding: 10px;
+  }
+
+  section {
+    width: 100%;
+    margin: 0;
+    padding: 16px;
+    border-radius: 0;
+  }
+
+  tr {
+    display: block;
+  }
+
+  td {
+    display: block;
+    padding: 12px;
+  }
+
+  .tbhead {
+    font-size: 18px;
+    padding: 16px;
+  }
+
+  .synopsis {
+    padding: 12px;
+  }
+
+  .poster {
+    width: 70vw;
+    max-width: 240px;
   }
 }
 
