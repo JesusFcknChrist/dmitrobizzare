@@ -9,90 +9,97 @@
     src: url(Anime_Ace_v05_Regular.woff2);
 }
 
-body {
-    background-color: aliceblue;
+body { 
+  background-color: aliceblue; 
+} 
+p{ 
+  font-family: AnimeAceUkr; 
+  text-decoration: none; 
+} 
+a { 
+  text-decoration: none; 
+} 
+header { 
+  background-color: rgb(199, 224, 247); 
+  overflow: hidden; 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+} 
+.head { 
+  font-family: AnimeAceUkr; 
+  font-size: 25px; 
+  text-align: center; 
+  padding: 20px; 
+  flex: 1; 
+} 
+.sideimg { 
+  height: 150px; 
+  margin-left: 50px; 
+  margin-right: 50px; 
+} 
+nav ul { 
+  list-style: none; 
+  display: flex; 
+  margin: 0; 
+  padding: 0; 
+  font-family: AnimeAceUkr; 
+  font-size: 20px; 
+  background-color: rgb(141, 171, 197); 
+} 
+nav ul li { 
+  margin: 0; 
+} 
+nav ul li a { 
+  display: block; 
+  text-decoration: none; 
+  padding: 16px; 
+  color: black; 
+} 
+nav ul li a:hover, a:active { 
+  background-color: rgb(189, 217, 240); 
+} 
+section { 
+  background-color: rgb(163, 197, 218); 
+  width: 70%; 
+  max-width: 1000px; 
+  margin: 50px auto; 
+  padding: 24px; 
+  border-radius: 12px; 
+} 
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+} 
+td { 
+  font-family: AnimeAceUkr; 
+  padding: 20px; 
+  text-align: center; 
+} 
+.tbhead { 
+  font-size: 22px; 
+  padding: 40px; 
+  border-bottom: 6px solid aliceblue; 
+} 
+.synopsis { 
+  padding: 0 48px; 
+  line-height: 1.6; 
+} 
+.poster { 
+  width: 280px; 
+  margin: 0 auto; 
+  display: block; 
+} 
+footer { 
+  font-family: AnimeAceUkr; 
+  font-size: 12px; 
+  background-color: #a5a5a5; 
+  padding: 10px; 
+  text-align: center; 
+  margin-top: 200px; 
 }
 
-header {
- background-color: rgb(199, 224, 247); overflow: hidden; display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.head {
-    font-family: AnimeAceUkr; font-size: 25px; text-align: center; padding: 20px; flex: 1;
-}
-.sideimg {
-    height: 150px; margin-left: 50px; margin-right: 50px;
-}
-nav ul {
-  list-style: none;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  font-family: AnimeAceUkr;
-  font-size: 20px;
-  background-color: rgb(141, 171, 197);
-}
 
-nav ul li {
-  margin: 0;
-}
-
-nav ul li a {
-  display: block;
-  text-decoration: none;
-  padding: 16px;
-  color: black;
-}
-
-nav ul li a:hover, a:active {
-  background-color: rgb(189, 217, 240);
-}
-section {
-  background-color: rgb(163, 197, 218);
-  width: 70%;
-  max-width: 1000px;
-  margin: 50px auto;
-  padding: 24px;
-  border-radius: 12px;
-}
-
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-td {
-  font-family: AnimeAceUkr;
-  padding: 20px;
-  text-align: center;
-}
-
-.tbhead {
-  font-size: 22px;
-  padding: 40px;
-  border-bottom: 6px solid aliceblue;
-}
-
-.synopsis {
-  padding: 0 48px;
-  line-height: 1.6;
-}
-
-.poster {
-  width: 280px;
-  margin: 0 auto;
-  display: block;
-}
-
-footer {
-  font-family: AnimeAceUkr;
-  font-size: 12px;
-  background-color: #a5a5a5;
-  padding: 10px;
-  text-align: center;
-  margin-top: 200px;
-}
 
 /* Mobile scaling */
 @media (max-width: 768px) {
