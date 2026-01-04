@@ -38,7 +38,7 @@ header {
   margin-left: 50px; 
   margin-right: 50px; 
 } 
-nav ul { 
+nav ul, .top { 
   list-style: none; 
   display: flex; 
   margin: 0; 
@@ -50,7 +50,7 @@ nav ul {
 nav ul li { 
   margin: 0; 
 } 
-nav ul li a { 
+nav ul li a, .top { 
   display: block; 
   text-decoration: none; 
   padding: 16px; 
@@ -98,7 +98,15 @@ footer {
   text-align: center; 
   margin-top: 200px; 
 }
-
+.page {
+  margin: 10px auto 10px auto;
+  width: 80%;
+  display: block;
+}
+.name {
+  font-size: 20px;
+  text-align: center;
+}
 
 
 /* Mobile scaling */
@@ -146,6 +154,9 @@ footer {
   .poster {
     width: 70vw;
     max-width: 240px;
+  }
+  .page{
+    width: 100%;
   }
 }
 
