@@ -1,3 +1,3 @@
 # Офіційний читач коміксу "Бізарні Пригоди Дмитра Бізарника"
-jesusfcknchrist.github.io/dmitrobizzare
-Якщо все піде добре, це буде зручніше місце для читання, новин і т.д.
+<a href="https://jesusfcknchrist.github.io/dmitrobizzare">jesusfcknchrist.github.io/dmitrobizzare</a>
+<p>Якщо все піде добре, це буде зручніше місце для читання, новин і т.д.</p>
