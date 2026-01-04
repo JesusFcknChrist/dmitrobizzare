@@ -107,6 +107,10 @@ footer {
   font-size: 20px;
   text-align: center;
 }
+.date {
+  text-align: right;
+  color: #4e4e4e;
+}
 
 
 /* Mobile scaling */
