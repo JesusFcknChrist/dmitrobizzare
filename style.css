@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: AnimeAceUkr;
-    src: url(Anime_Ace_v05_Regular.woff2);
+    src: url(AnimeAcev05v1.woff2);
 }
 
 body { 
@@ -38,7 +38,7 @@ header {
   margin-left: 50px; 
   margin-right: 50px; 
 } 
-nav ul, .top { 
+nav ul { 
   list-style: none; 
   display: flex; 
   margin: 0; 
@@ -48,17 +48,24 @@ nav ul, .top {
   background-color: rgb(141, 171, 197); 
 } 
 nav ul li { 
+  position: relative;
+  flex: 0 0 auto;
   margin: 0; 
 } 
-nav ul li a, .top { 
-  display: block; 
-  text-decoration: none; 
-  padding: 16px; 
-  color: black; 
+nav ul li a { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  text-decoration: none;
+  color: black;
 } 
 nav ul li a:hover, a:active { 
   background-color: rgb(189, 217, 240); 
 } 
+.langright {
+  margin-left: auto;
+}
 section { 
   background-color: rgb(163, 197, 218); 
   width: 70%; 
@@ -90,6 +97,31 @@ td {
   margin: 0 auto; 
   display: block; 
 } 
+.picto {
+ width: 24px;
+ display: block;
+ height: auto;
+}
+nav ul li .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(141, 171, 197);
+  min-width: 150px;
+  z-index: 1000;
+  border-radius: 6px;
+}
+.submenu li a {
+  display: block;
+  padding: 8px 12px;
+}
+nav ul li:hover .submenu {
+  display: block;
+}
 footer { 
   font-family: AnimeAceUkr; 
   font-size: 12px; 
@@ -111,6 +143,21 @@ footer {
   text-align: right;
   color: #4e4e4e;
 }
+.lang-btn {
+  background: none;
+  border: none;
+  padding: 20px;
+  margin: auto;
+  font: inherit;
+  color: inherit; 
+  cursor: pointer;
+  text-decoration: underline;
+}
+.lang-btn:hover, .lang-btn:focus {
+  text-decoration: underline;
+  color: rgb(189, 217, 240); 
+  outline: none; 
+}
 
 
 /* Mobile scaling */
@@ -119,7 +166,6 @@ footer {
     font-size: 12px;
     padding: 10px 0;
   }
-
   .sideimg {
     height: 80px;
     margin: 0 10px;
@@ -162,6 +208,14 @@ footer {
   .page{
     width: 100%;
   }
+  .picto {
+    width: 12px;
+    display: block;
+    height: auto;
+  }
+  nav ul li:onclick .submenu {
+  display: block;
+}
 }
 
 @media (max-width: 480px) {

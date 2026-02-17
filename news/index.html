@@ -11,16 +11,22 @@
     <header>
     <img class="sideimg" title="bleh." src="../face.png">
     <div class="head">
-        <h1>Бізарні Пригоди Дмитра Бізарника</h1>
+        <h1 data-i18n="title"></h1>
     </div>
     <img class="sideimg" title="bleh." src="../face.png">
 </header>
 
 <nav>
     <ul>
-        <li><a href="../main">Головна</a></li>
-        <li><a href="../chapters">Глави</a></li>
-        <li><a href="../news">Новини</a></li>
+        <li><a href="../main" data-i18n="main"></a></li>
+        <li><a href="../chapters" data-i18n="chap"></a></li>
+        <li><a href="../news" data-i18n="news"></a></li>
+        <li class="langright"><a><img class="picto" src="../langglobe.png"><img class="picto" src="../langpic.png"></a>
+            <ul class="submenu">
+                <li><button class="lang-btn" data-lang="uk">UK<img class="picto" src="../lang/Flag_of_Ukraine-128x85.png"></button></li>
+                <li><button class="lang-btn" data-lang="en">EN<img class="picto" src="../lang/Flag_of_United_Kingdom-128x64.png"></button></li>
+                <li><button class="lang-btn" data-lang="es">ES<img class="picto" src="../lang/Flag_of_Spain-128x85.png"></button></li>
+            </ul></li>
     </ul>
 </nav>
 <section>
@@ -31,8 +37,9 @@
     </article>
 </section>
 <footer>
-    <p>Ніхуя не захищено, але не крадіть будь ласка 🄯</p>
-    <p>Контактні дані: downonmyhead8@gmail.com</p>
+     <p data-i18n="not safe"></p>
+    <p data-i18n="contact"></p>
 </footer>
+<script src="../lang/lang.js"></script>
 </body>
 </html>

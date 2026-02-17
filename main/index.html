@@ -11,35 +11,42 @@
 <header>
     <img class="sideimg" title="bleh." src="../face.png">
     <div class="head">
-        <h1>Бізарні Пригоди Дмитра Бізарника</h1>
+        <h1 data-i18n="title"></h1>
     </div>
     <img class="sideimg" title="bleh." src="../face.png">
 </header>
 
 <nav>
     <ul>
-        <li><a href="../main">Головна</a></li>
-        <li><a href="../chapters">Глави</a></li>
-        <li><a href="../news">Новини</a></li>
+        <li><a href="../main" data-i18n="main"></a></li>
+        <li><a href="../chapters" data-i18n="chap"></a></li>
+        <li><a href="../news" data-i18n="news"></a></li>
+        <li class="langright"><a><img class="picto" src="../langglobe.png"><img class="picto" src="../langpic.png"></a>
+            <ul class="submenu">
+                <li><button class="lang-btn" data-lang="uk">UK<img class="picto" src="../lang/Flag_of_Ukraine-128x85.png"></button></li>
+                <li><button class="lang-btn" data-lang="en">EN<img class="picto" src="../lang/Flag_of_United_Kingdom-128x64.png"></button></li>
+                <li><button class="lang-btn" data-lang="es">ES<img class="picto" src="../lang/Flag_of_Spain-128x85.png"></button></li>
+            </ul></li>
     </ul>
 </nav>
 <section>
     <article>
         <table>
             <tr>
-                <td class="tbhead" colspan="2">Вітаю на офіційні сторінці коміксу "Бізарні Пригоди Дмитра Бізарника"!</td>
+                <td class="tbhead" colspan="2" data-i18n="head"></td>
             </tr>
             <tr>
-                <td class="synopsis" >Коли до банальності звичайний зверхній підліток Діма опиняється у вирі таємничих подій, він не надто дивується. Він прожив все життя, вважаючи, що особливий. Але коли в нього з'являється все більше незвичайних, деколи навіть загадкових, друзів, яких він вплутує в надзвичайні події, Діма починає сумніватися у своїй особливості. Таким же неясним є і сюжет коміксу, де на поверхні повсякдене життя підлітків переплітається з битвою добра і зла, але за кулісами меркають приховані сили та сумніви. Тоді, як у Діми, так і у читачів, виникає питання, про що насправді ця історія. І чи про Діму вона взагалі...</td>
+                <td class="synopsis" data-i18n="synop"></td>
                 <td><img class="poster" title="Жоский Дмитро" src="../poster.png"></td>
             </tr>
         </table>
     </article>
 </section>
 <footer>
-    <p>Ніхуя не захищено, але не крадіть будь ласка 🄯</p>
-    <p>Контактні дані: downonmyhead8@gmail.com</p>
+    <p data-i18n="not safe"></p>
+    <p data-i18n="contact"></p>
 </footer>
+    <script src="../lang/lang.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>
