@@ -6,6 +6,8 @@
     <title>Глава 1</title>
     <link rel="stylesheet" href="../../style.css">
     <link rel="icon" type="image/x-icon" href="../../face.png">
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
 </head>
 <body>
     <header id="top">
@@ -94,6 +96,17 @@
         </article>
     </section>
     <a class="top" href="#top" data-i18n="top"></a>
+
+<div class="comments" data-chapter="ch1">   
+  <h3 class="comms" data-i18n="comms"></h3>
+  <input type="text" class="commname" data-i18n-placeholder="commname"><br>
+  <textarea class="commtext" data-i18n-placeholder="commtext"></textarea>
+  <button class="commbutton" data-i18n="commbutton"></button>
+  <div class="comment-list"></div>
+</div>
+
 <script src="../lang/lang.js"></script>
+<script src="../../comments.js"></script>
+
 </body>
 </html>

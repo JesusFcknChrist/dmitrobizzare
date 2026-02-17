@@ -25,6 +25,13 @@ async function loadLanguage(lang){
       }
     });
 
+    document.querySelectorAll("[data-i18n-placeholder]").forEach(el=>{
+      const key = el.getAttribute("data-i18n-placeholder");
+      if(data[key]){
+        el.setAttribute("placeholder", data[key]);
+      }
+    });
+
     localStorage.setItem("lang", lang);
     document.documentElement.lang = lang;
 
