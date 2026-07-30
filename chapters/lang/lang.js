@@ -35,6 +35,15 @@ async function loadLanguage(lang){
     localStorage.setItem("lang", lang);
     document.documentElement.lang = lang;
 
+    // Switch comic page images
+    document.querySelectorAll(".page").forEach(img => {
+  if (lang === "es") {
+    img.src = img.src.replace(/\.png$/, "_es.png");
+  } else {
+    img.src = img.src.replace("_es.png", ".png");
+  }
+});
+
   }catch(err){
     console.error("Language load error:", err);
 
